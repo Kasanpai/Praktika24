@@ -1,0 +1,297 @@
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic
+$ git init
+Initialized empty Git repository in D:/docs/gruppa doci/practic/.git/
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (master)
+$ git branch -M main
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git add -A
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git statys
+git: 'statys' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ gir status
+bash: gir: command not found
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .vs/practic/FileContentIndex/09fbb4b1-2bc6-4c41-a105-8b5d542597cc.vsidx
+        new file:   .vs/practic/v17/.suo
+        new file:   .vs/practic/v17/Browse.VC.db
+        new file:   .vs/practic/v17/DocumentLayout.json
+        new file:   .vs/practic/v17/ipch/AutoPCH/c7bfa975133673f3/PRACTIC.ipch
+        new file:   practic.cpp
+        new file:   practic.sln
+        new file:   practic.vcxproj
+        new file:   practic.vcxproj.filters
+        new file:   practic.vcxproj.user
+        new file:   practic/x64/Debug/practic.exe.recipe
+        new file:   practic/x64/Debug/practic.ilk
+        new file:   practic/x64/Debug/practic.log
+        new file:   practic/x64/Debug/practic.obj
+        new file:   practic/x64/Debug/practic.tlog/CL.command.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/CL.read.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/CL.write.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/Cl.items.tlog
+        new file:   practic/x64/Debug/practic.tlog/link.command.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/link.read.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/link.secondary.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/link.write.1.tlog
+        new file:   practic/x64/Debug/practic.tlog/practic.lastbuildstate
+        new file:   practic/x64/Debug/vc143.idb
+        new file:   practic/x64/Debug/vc143.pdb
+        new file:   x64/Debug/practic.exe
+        new file:   x64/Debug/practic.pdb
+
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git comit "A program has been created"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git clone https://github.com/Kasanpai/Praktika24.git
+Cloning into 'Praktika24'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git remote -v
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git clone https://github.com/Kasanpai/Praktika24.git
+Cloning into 'Praktika24'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ git cd Praktica24
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ cd Praktica24
+bash: cd: Praktica24: No such file or directory
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic (main)
+$ cd Praktika24
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git remout -v
+git: 'remout' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git remote -v
+origin  https://github.com/Kasanpai/Praktika24.git (fetch)
+origin  https://github.com/Kasanpai/Praktika24.git (push)
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git comit "program add into reposit"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git commit "program add into reposit"
+error: pathspec 'program add into reposit' did not match any file(s) known to git
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git add -A
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git commit "program add into reposit"
+error: pathspec 'program add into reposit' did not match any file(s) known to git
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git -m commit "program add into reposit"
+unknown option: -m
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git commit -m "program add into reposit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Ivan@coolcomp.(none)')
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git config --global user.email ivan.pichaev@mail.ru
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git config --global user.name Vano
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git commit -m "program add into reposit"
+[main 7edc0eb] program add into reposit
+ 27 files changed, 324 insertions(+)
+ create mode 100644 .vs/practic/FileContentIndex/09fbb4b1-2bc6-4c41-a105-8b5d542597cc.vsidx
+ create mode 100644 .vs/practic/v17/.suo
+ create mode 100644 .vs/practic/v17/Browse.VC.db
+ create mode 100644 .vs/practic/v17/DocumentLayout.json
+ create mode 100644 .vs/practic/v17/ipch/AutoPCH/c7bfa975133673f3/PRACTIC.ipch
+ create mode 100644 practic.cpp
+ create mode 100644 practic.sln
+ create mode 100644 practic.vcxproj
+ create mode 100644 practic.vcxproj.filters
+ create mode 100644 practic.vcxproj.user
+ create mode 100644 practic/x64/Debug/practic.exe.recipe
+ create mode 100644 practic/x64/Debug/practic.ilk
+ create mode 100644 practic/x64/Debug/practic.log
+ create mode 100644 practic/x64/Debug/practic.obj
+ create mode 100644 practic/x64/Debug/practic.tlog/CL.command.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/CL.read.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/CL.write.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/Cl.items.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/link.command.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/link.read.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/link.secondary.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/link.write.1.tlog
+ create mode 100644 practic/x64/Debug/practic.tlog/practic.lastbuildstate
+ create mode 100644 practic/x64/Debug/vc143.idb
+ create mode 100644 practic/x64/Debug/vc143.pdb
+ create mode 100644 x64/Debug/practic.exe
+ create mode 100644 x64/Debug/practic.pdb
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git remote -v
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git remote add https://github.com/Kasanpai/Praktika24.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git remote add origin https://github.com/Kasanpai/Praktika24.git
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git remote -v
+origin  https://github.com/Kasanpai/Praktika24.git (fetch)
+origin  https://github.com/Kasanpai/Praktika24.git (push)
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git push origin main
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (42/42), 3.94 MiB | 1.46 MiB/s, done.
+Total 42 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Kasanpai/Praktika24.git
+   1cdfcf1..7edc0eb  main -> main
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$ git push origin main
+Everything up-to-date
+
+Ivan@coolcomp MINGW64 /d/docs/gruppa doci/practic/Praktika24 (main)
+$
