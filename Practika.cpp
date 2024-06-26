@@ -23,7 +23,6 @@ void cocktailSort(int mass[], int n) {
                 swapped = 1;
             }
         }
-
         if (!swapped)
             break;
 
@@ -53,11 +52,13 @@ int main() {
     printf("Выберите вариант (1, 2 или 3): ");
     scanf("%d", &choice);
 
+    int n = 0;
+    int* mass = NULL;
+
     if (choice == 1) {
-        int n;
         printf("Введите размер массива: ");
         scanf("%d", &n);
-        int* mass = (int*)malloc(n * sizeof(int));
+        mass = (int*)malloc(n * sizeof(int));
 
         printf("Введите элементы массива:\n");
         for (int i = 0; i < n; i++) {
@@ -76,9 +77,6 @@ int main() {
             return 1;
         }
 
-        int n = 0;
-        int* mass = NULL;
-
         int number;
         while (fscanf(file, "%d", &number) == 1) {
             n++;
@@ -87,27 +85,11 @@ int main() {
         }
         fclose(file);
         printf("\nМассив создан");
-
-        time_t start = clock();
-        cocktailSort(mass, n);
-        time_t end = clock();
-        double time = ((double)(end - start)) / 1000;
-
-        FILE* sortedFile = fopen("sorted_list.txt", "w");
-        for (int i = 0; i < n; i++) {
-            fprintf(sortedFile, "%d\n", mass[i]);
-        }
-        fclose(sortedFile);
-
-        printf("\nМассив отсортирован, сохранен в файле 'sorted_list.txt'");
-        printf("\n\nВремя сортировки: %f секунд\n", time);
-        free(mass);
     }
     else if (choice == 3) {
-        int n;
         printf("Введите размер массива: ");
         scanf("%d", &n);
-        int* mass = (int*)malloc(n * sizeof(int));
+        mass = (int*)malloc(n * sizeof(int));
 
         srand(time(0));
         FILE* createdFile = fopen("list.txt", "w");
@@ -117,25 +99,25 @@ int main() {
         }
         fclose(createdFile);
         printf("\nМассив создан, сохранен в файле 'list.txt'");
-
-        time_t start = clock();
-        cocktailSort(mass, n);
-        time_t end = clock();
-        double time = ((double)(end - start)) / 1000;
-
-        FILE* sortedFile = fopen("sorted_list.txt", "w");
-        for (int i = 0; i < n; i++) {
-            fprintf(sortedFile, "%d\n", mass[i]);
-        }
-        fclose(sortedFile);
-
-        printf("\nМассив отсортирован, сохранен в файле 'sorted_list.txt'");
-        printf("\n\nВремя сортировки: %f секунд\n", time);
-        free(mass);
     }
     else {
         printf("Неверный выбор. Попробуйте еще раз.\n");
     }
+
+    time_t start = clock();
+    cocktailSort(mass, n);
+    time_t end = clock();
+    double time = ((double)(end - start)) / 1000;
+
+    FILE* sortedFile = fopen("sorted_list.txt", "w");
+    for (int i = 0; i < n; i++) {
+        fprintf(sortedFile, "%d\n", mass[i]);
+    }
+    fclose(sortedFile);
+
+    printf("\nМассив отсортирован, сохранен в файле 'sorted_list.txt'");
+    printf("\n\nВремя сортировки: %f секунд\n", time);
+    free(mass);
 
     return 0;
 }
