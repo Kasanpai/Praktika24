@@ -23,6 +23,7 @@ void cocktailSort(int mass[], int n) {
                 swapped = 1;
             }
         }
+
         if (!swapped)
             break;
 
@@ -57,12 +58,19 @@ int main() {
 
     if (choice == 1) {
         printf("Введите размер массива: ");
-        scanf("%d", &n);
+        if (scanf("%d", &n) != 1 || n <= 0) {
+            printf("Ошибка: введено некорректное значение. Пожалуйста, введите целое число.\n");
+            return 1;
+        }
         mass = (int*)malloc(n * sizeof(int));
 
         printf("Введите элементы массива:\n");
         for (int i = 0; i < n; i++) {
-            scanf("%d", &mass[i]);
+            if (scanf("%d", &mass[i]) != 1) {
+                printf("Ошибка: введено некорректное значение. Пожалуйста, введите целое число.\n");
+                free(mass);
+                return 1;
+            }
         }
         printf("\nМассив создан");
     }
@@ -88,7 +96,10 @@ int main() {
     }
     else if (choice == 3) {
         printf("Введите размер массива: ");
-        scanf("%d", &n);
+        if (scanf("%d", &n) != 1 || n <= 0) {
+            printf("Ошибка: введено некорректное значение. Пожалуйста, введите положительное целое число.\n");
+            return 1;
+        }
         mass = (int*)malloc(n * sizeof(int));
 
         srand(time(0));
@@ -99,9 +110,10 @@ int main() {
         }
         fclose(createdFile);
         printf("\nМассив создан, сохранен в файле 'list.txt'");
-    }
+    }  
     else {
         printf("Неверный выбор. Попробуйте еще раз.\n");
+        return 1;
     }
 
     time_t start = clock();
