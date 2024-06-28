@@ -10,7 +10,7 @@ void swap(int* start, int* end) {
     *end = elem;
 }
 
-void cocktailSort(int mass[], int n) {
+void cocktailSort(int mass[], int n, long long* count) {
     int swapped = 1;
     int start = 0;
     int end = n - 1;
@@ -21,6 +21,7 @@ void cocktailSort(int mass[], int n) {
             if (mass[i] > mass[i + 1]) {
                 swap(&mass[i], &mass[i + 1]);
                 swapped = 1;
+                (*count)++;
             }
         }
 
@@ -34,6 +35,7 @@ void cocktailSort(int mass[], int n) {
             if (mass[i] > mass[i + 1]) {
                 swap(&mass[i], &mass[i + 1]);
                 swapped = 1;
+                (*count)++;
             }
         }
         start++;
@@ -55,6 +57,7 @@ int main() {
 
     int n = 0;
     int* mass = NULL;
+    long long count = 0;
 
     if (choice == 1) {
         printf("Введите размер массива: ");
@@ -64,6 +67,7 @@ int main() {
         }
         mass = (int*)malloc(n * sizeof(int));
 
+        FILE* createdFile = fopen("list.txt", "w");
         printf("Введите элементы массива:\n");
         for (int i = 0; i < n; i++) {
             if (scanf("%d", &mass[i]) != 1) {
@@ -71,8 +75,10 @@ int main() {
                 free(mass);
                 return 1;
             }
+            fprintf(createdFile, "%d\n", mass[i]);
         }
-        printf("\nМассив создан");
+        fclose(createdFile);
+        printf("\nМассив создан, сохранен в файле 'list.txt'");
     }
     else if (choice == 2) {
         char filename[100];
@@ -117,7 +123,7 @@ int main() {
     }
 
     time_t start = clock();
-    cocktailSort(mass, n);
+    cocktailSort(mass, n, &count);
     time_t end = clock();
     double time = ((double)(end - start)) / 1000;
 
@@ -129,6 +135,7 @@ int main() {
 
     printf("\nМассив отсортирован, сохранен в файле 'sorted_list.txt'");
     printf("\n\nВремя сортировки: %f секунд\n", time);
+    printf("Количество перестановок: %lld\n", count);
     free(mass);
 
     return 0;
