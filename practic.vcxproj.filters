@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="practic.cpp">
+    <ClCompile Include="Practika.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

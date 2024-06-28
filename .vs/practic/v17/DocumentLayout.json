@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\docs\\gruppa doci\\practic\\Praktika24\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CACA39A-9C65-48E8-B334-2C3EE356FED7}|practic.vcxproj|D:\\docs\\gruppa doci\\practic\\Praktika24\\practic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6CACA39A-9C65-48E8-B334-2C3EE356FED7}|practic.vcxproj|solutionrelative:practic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6CACA39A-9C65-48E8-B334-2C3EE356FED7}|practic.vcxproj|D:\\docs\\gruppa doci\\practic\\Praktika24\\Practika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6CACA39A-9C65-48E8-B334-2C3EE356FED7}|practic.vcxproj|solutionrelative:Practika.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "practic.cpp",
-              "DocumentMoniker": "D:\\docs\\gruppa doci\\practic\\Praktika24\\practic.cpp",
-              "RelativeDocumentMoniker": "practic.cpp",
-              "ToolTip": "D:\\docs\\gruppa doci\\practic\\Praktika24\\practic.cpp",
-              "RelativeToolTip": "practic.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAACAAAA",
+              "Title": "Practika.cpp",
+              "DocumentMoniker": "D:\\docs\\gruppa doci\\practic\\Praktika24\\Practika.cpp",
+              "RelativeDocumentMoniker": "Practika.cpp",
+              "ToolTip": "D:\\docs\\gruppa doci\\practic\\Praktika24\\Practika.cpp",
+              "RelativeToolTip": "Practika.cpp",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvyIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-26T08:16:01.515Z",
+              "WhenOpened": "2024-06-26T13:23:14.294Z",
               "EditorCaption": ""
             }
           ]

@@ -1,2 +1,3 @@
-﻿  practic.cpp
-  practic.vcxproj -> D:\docs\группа доки\practic\x64\Debug\practic.exe
+﻿  Practika.cpp
+D:\docs\gruppa doci\practic\Praktika24\Practika.cpp(111,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  practic.vcxproj -> D:\docs\gruppa doci\practic\Praktika24\x64\Debug\practic.exe
