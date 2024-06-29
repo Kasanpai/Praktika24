@@ -1,3 +1,4 @@
 ﻿  Practika.cpp
-D:\docs\gruppa doci\practic\Praktika24\Practika.cpp(111,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  practic.vcxproj -> D:\docs\gruppa doci\practic\Praktika24\x64\Debug\practic.exe
+D:\docs\gruppa doci\practicka\Praktika24\Practika.cpp(111,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  LINK : не найден или не выполнена сборка D:\docs\gruppa doci\practicka\Praktika24\x64\Debug\practic.exe при последней инкрементной компоновке; выполняется полная компоновка
+  practic.vcxproj -> D:\docs\gruppa doci\practicka\Praktika24\x64\Debug\practic.exe
