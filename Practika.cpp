@@ -116,7 +116,11 @@ int main() {
         }
         fclose(createdFile);
         printf("\nМассив создан, сохранен в файле 'list.txt'");
+<<<<<<< HEAD
+    }  
+=======
     }
+>>>>>>> 2c17c7ddc01e101ac5e27a6c0e2a6964ef30e72c
     else {
         printf("Неверный выбор. Попробуйте еще раз.\n");
         return 1;
