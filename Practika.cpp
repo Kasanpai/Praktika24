@@ -116,11 +116,11 @@ int main() {
         }
         fclose(createdFile);
         printf("\nМассив создан, сохранен в файле 'list.txt'");
-<<<<<<< HEAD
+
     }  
-=======
-    }
->>>>>>> 2c17c7ddc01e101ac5e27a6c0e2a6964ef30e72c
+
+
+
     else {
         printf("Неверный выбор. Попробуйте еще раз.\n");
         return 1;
@@ -129,7 +129,7 @@ int main() {
     time_t start = clock();
     cocktailSort(mass, n, &count);
     time_t end = clock();
-    double time = ((double)(end - start)) / 1000;
+    double time = ((double)(end - start));
 
     FILE* sortedFile = fopen("sorted_list.txt", "w");
     for (int i = 0; i < n; i++) {
@@ -138,7 +138,7 @@ int main() {
     fclose(sortedFile);
 
     printf("\nМассив отсортирован, сохранен в файле 'sorted_list.txt'");
-    printf("\n\nВремя сортировки: %f секунд\n", time);
+    printf("\n\nВремя сортировки: %f милисекунд\n", time);
     printf("Количество перестановок: %lld\n", count);
     free(mass);
 
